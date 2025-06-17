@@ -8,7 +8,8 @@ import '../styles/global.css';
     <title>Coffee Haven</title>
   </head>
   <body class="bg-[#FAF7F2] text-[#2C2C2C] font-sans">
-    <header class="bg-[#D9B28E] px-6 py-4 flex justify-between items-center">
+    <!-- Header -->
+    <header class="bg-secondary px-6 py-4 flex justify-between items-center">
       <h1 class="text-3xl font-bold">Coffee Haven</h1>
       <nav class="space-x-4">
         <a href="#about" class="hover:underline">About</a>
@@ -16,9 +17,17 @@ import '../styles/global.css';
         <a href="#contact" class="hover:underline">Contact</a>
       </nav>
     </header>
-    <main class="px-6 py-12">
-      <h2 class="text-2xl font-semibold mb-4">Welcome!</h2>
-      <p>We serve handcrafted coffee and pastries with love.</p>
-    </main>
+
+    <!-- Hero -->
+    <section
+      class="h-screen flex flex-col md:flex-row items-center justify-center
+             bg-linear-45 from-primary via-secondary to-[#FAF7F2] text-white px-8">
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <h2 class="text-5xl font-bold mb-4">Great Coffee, Fresh Beans</h2>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+      <img src="https://source.unsplash.com/400x300/?coffee"
+           alt="Coffee" class="rounded-lg shadow-lg md:w-1/2" />
+    </section>
   </body>
 </html>
